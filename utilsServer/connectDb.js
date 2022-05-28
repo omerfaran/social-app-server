@@ -6,7 +6,7 @@ async function connectDb() {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
-      useFindAndModify: false
+      useFindAndModify: false,
     });
     console.log("Mongodb connected");
   } catch (error) {

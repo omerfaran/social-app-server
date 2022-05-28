@@ -6,7 +6,7 @@ const { createServer } = require("http");
 const { Server } = require("socket.io");
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-  cors: "http://localhost:3000",
+  cors: "https://social-app-client.vercel.app",
 });
 
 require("dotenv").config({ path: "./config.env" });
